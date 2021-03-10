@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Muse Neurofeedback</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <string name="key_upper_enabled">upperEnabled</string>
+    <string name="key_lower_enabled">lowerEnabled</string>
+
+    <string name="key_upper_limit">upperLimit</string>
+    <string name="key_lower_limit">lowerLimit</string>
+
+    <string name="key_upper_time">upperTime</string>
+    <string name="key_lower_time">lowerTime</string>
+
+    <string name="key_pretest_time">pretestTime</string>
+    <string name="key_session_time">sessionTime</string>
+
+    <string name="key_absolute_alpha">absolutesAlpha</string>
+
+    <string name="key_manual_baseline">useManualBaseline</string>
+    <string name="key_manual_baseline_value">manualBaselineValue</string>
+
+    <string name="key_short_term_mean">useShortTermMean</string>
+    <string name="key_short_term_mean_value">shortTermMean</string>
+
+    <string name="key_simulate_eeg_data">simulateData</string>
+
+    <string name="key_framerate_chart">frameRateChart</string>
+
+
+    <string-array name="short_term_mean_value_items">
+        <item>0.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>2.5</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

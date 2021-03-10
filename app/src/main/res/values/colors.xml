@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#1b1b1b</color>
+    <color name="colorPrimaryLight">#6d6d6d</color>
+    <color name="colorAccent">#f4511e</color>
+    <color name="background">#eaeaea</color>
+    <color name="main_background">#dcdcdc</color>
+
+
+    <color name="red">#F44336</color>
+    <color name="yellow">#ffea00</color>
+    <color name="green">#4CAF50</color>
+    <color name="lightgreen">#95e799</color>
+    <color name="darkgray">#898989</color>
+
+
+    <array name="chart_colors">
+        <item>@android:color/holo_red_light</item>
+        <item>@android:color/holo_green_light</item>
+    </array>
+
+
+</resources>

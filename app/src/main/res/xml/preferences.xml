@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Zeit Einstellung">
+
+        <EditTextPreference
+            android:defaultValue="300"
+            android:icon="@drawable/time"
+            android:inputType="number"
+            android:key="@string/key_pretest_time"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Festlegen, wie lange die Baseline gemssen werden soll (in Sekunden)."
+            android:title="Baseline" />
+        <EditTextPreference
+            android:defaultValue="900"
+            android:icon="@drawable/time"
+            android:key="@string/key_session_time"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Festlegen, wie lange die Feedback Session laufen soll (in Sekunden)."
+            android:title="Zeit Session" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Untere Schwelle">
+
+        <EditTextPreference
+            android:defaultValue="20"
+            android:icon="@drawable/percent"
+            android:inputType="number"
+            android:key="@string/key_lower_limit"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Legt fest, über ewlchem Wert der Feedback kommen soll"
+            android:title="Untere Schwelle" />
+        <EditTextPreference
+            android:defaultValue="20"
+            android:icon="@drawable/sandclock"
+            android:key="@string/key_lower_time"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Festlege, ob das Signal eine zeitliche Begrenzung haben soll."
+            android:title="Zeitlimit untere Schwelle" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Obere Schwelle">
+
+
+        <EditTextPreference
+            android:defaultValue="70"
+            android:icon="@drawable/percent"
+            android:inputType="number"
+            android:key="@string/key_upper_limit"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Legt fest, über ewlchem Wert der Feedback kommen soll"
+            android:title="Obere Schwelle" />
+        <EditTextPreference
+            android:defaultValue="20"
+            android:icon="@drawable/sandclock"
+            android:inputType="number"
+            android:key="@string/key_upper_time"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Festlege, ob das Signal eine zeitliche Begrenzung haben soll."
+            android:title="Zeitlimit obere Schwelle" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Manuelle Baseline">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:enabled="false"
+            android:key="@string/key_manual_baseline"
+            android:title="Manuelle baseline aktivieren" />
+        <EditTextPreference
+            android:defaultValue="1"
+            android:enabled="false"
+            android:key="@string/key_manual_baseline_value"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Manuelle Baseline" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Graph Einstellungen">
+
+        <EditTextPreference
+            android:defaultValue="60"
+            android:key="@string/key_framerate_chart"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Aktualisierungsrate" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/key_short_term_mean"
+            android:summary="Die Werte werden gemittelt angezeigt"
+            android:title="Werte mitteln" />
+
+        <ListPreference
+            android:entries="@array/short_term_mean_value_items"
+            android:entryValues="@array/short_term_mean_value_items"
+            android:key="@string/key_short_term_mean_value"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="(in Sekunden)"
+            android:title="Zeitraum zum Mitteln" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Absolutes Alpha verwenden">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/key_absolute_alpha"
+            android:title="Absolute Alpha-Werte verwenden" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
